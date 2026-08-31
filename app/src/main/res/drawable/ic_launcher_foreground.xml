@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon FOREGROUND layer only (transparent background). The glyph is
+     scaled to ~63% of the 108dp canvas and centered so it stays inside the
+     system's safe zone and isn't clipped by circle/squircle/rounded-square
+     icon masks. Place ic_launcher_foreground.png in res/drawable-nodpi/. -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/antigravity_color"
+    android:gravity="fill" />

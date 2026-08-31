@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Identity -->
+    <string name="app_name">Antigravity Remote Control</string>
+
+    <!-- Toolbar & Menu Actions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Reload</string>
+    <string name="action_close">Close</string>
+
+    <!-- URL Configuration Dialog -->
+    <string name="dialog_url_config_title">Network Security</string>
+    <string name="dialog_url_config_message">Configure network security preferences for your connection.</string>
+    <string name="dialog_ssl_bypass_title">SSL Certificate Bypass</string>
+    <string name="dialog_ssl_bypass_summary">Automatically bypass SSL certificate validation for college/corporate interception proxies (Netspark).</string>
+    <string name="button_save_connect">Save Settings</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!-- Error View UI -->
+    <string name="error_connection_title">Unable to Connect</string>
+    <string name="error_connection_message">Could not load the Antigravity Remote Control interface. Check the server URL and network connection.</string>
+    <string name="error_invalid_url">Invalid URL format. Please check the hostname and port number.</string>
+    <string name="button_retry">Retry Connection</string>
+    <string name="button_configure_url">Configure Server URL</string>
+
+    <!-- Push Notifications & Channels -->
+    <string name="notification_channel_name">Remote Control Notifications</string>
+    <string name="notification_channel_description">Notifications dispatched from the Antigravity Remote Control web interface</string>
+    <string name="notification_channel_desc">Alerts, updates, and session notifications from Antigravity Remote Control.</string>
+    <string name="permission_notification_rationale">Antigravity Remote Control requires notification permissions to deliver task completion alerts and agent messages.</string>
+
+    <!-- Authentication Modal -->
+    <string name="auth_popup_title">Authentication</string>
+    <string name="auth_popup_loading">Opening sign-in window…</string>
+</resources>

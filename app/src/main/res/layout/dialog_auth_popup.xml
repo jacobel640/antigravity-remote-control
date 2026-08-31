@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Modal Popup Header -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/popupToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        app:navigationIcon="@drawable/ic_close"
+        app:title="@string/auth_popup_title"
+        app:titleTextAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+    <!-- Progress Indicator for Popup Auth Flow -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/popupProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="true"
+        app:indicatorColor="?attr/colorPrimary" />
+
+    <!-- Child WebView Container -->
+    <FrameLayout
+        android:id="@+id/popupWebViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

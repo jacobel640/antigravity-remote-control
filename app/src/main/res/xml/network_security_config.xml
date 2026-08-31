@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Base configuration applied across all network domains -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- 1. Pre-installed system root CAs -->
+            <certificates src="system" />
+            <!-- 2. User-installed certificates (Settings -> Security -> CA certs) -->
+            <certificates src="user" />
+            <!-- 3. Bundled Netspark / Enterprise Root CA from APK raw resources -->
+            <certificates src="@raw/netspark_ca" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Debug overrides for local debugging builds -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+            <certificates src="@raw/netspark_ca" />
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>
